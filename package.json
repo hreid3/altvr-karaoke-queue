@@ -27,7 +27,7 @@
   "scripts": {
     "test": "jest",
     "clean": "tsc --build --clean",
-    "build": "tsc --build && eslint --ext .ts src",
+    "build": "tsc --build",
     "build-only": "tsc --build",
     "build-watch": "tsc --build --watch --preserveWatchOutput",
     "lint": "eslint --ext .ts src",
@@ -56,6 +56,8 @@
   "dependencies": {
     "@microsoft/mixed-reality-extension-sdk": "^0.20.0",
     "@types/dotenv": "^6.1.0",
-    "dotenv": "^6.2.0"
+    "@types/word-wrap": "^1.2.1",
+    "dotenv": "^6.2.0",
+    "word-wrap": "^1.2.3"
   }
 }

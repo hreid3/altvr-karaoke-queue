@@ -27,7 +27,7 @@ function runApp() {
 
 	// Handle new application sessions
 	server.adapter.onConnection((context, params) => {
-		return new App(context, params, process.env.DAM_BASE_URI || '')
+		return new App(context, params)
 	});
 }
 
