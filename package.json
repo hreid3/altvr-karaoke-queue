@@ -31,6 +31,7 @@
     "build-only": "tsc --build",
     "build-watch": "tsc --build --watch --preserveWatchOutput",
     "lint": "eslint --ext .ts src",
+		"lint:fix": "eslint --fix --ext .ts src",
     "start": "node .",
     "start-watch": "nodemon --nolazy --inspect .",
     "debug": "node --nolazy --inspect=9229 .",

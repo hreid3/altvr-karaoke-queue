@@ -5,7 +5,6 @@
 
 import * as MRE from "@microsoft/mixed-reality-extension-sdk";
 import {BoxAlignment} from "@microsoft/mixed-reality-extension-sdk";
-import wordwrap from "word-wrap";
 import block from "./block";
 
 type Participant = MRE.User;
@@ -104,7 +103,7 @@ export default class App {
 				}
 			}
 		);
-		const label = MRE.Actor.Create(this.context, {
+		MRE.Actor.Create(this.context, {
 			actor: {
 				name: playButtonLabel,
 				parentId: playButton.id,
