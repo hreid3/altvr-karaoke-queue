@@ -25,7 +25,7 @@
   },
   "homepage": "",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "clean": "tsc --build --clean",
     "build": "tsc --build",
     "build-only": "tsc --build",
